@@ -43,6 +43,7 @@ CHECKSUM_FILE="checksums.md5"
 *Step 2: Backup Creation*
 
 The script:
+
 1.Creates a timestamped .tar.gz archive
 2.Saves it in your backup folder
 3.Generates a checksum file for verification
@@ -70,9 +71,9 @@ C:/Users/Lenovo/backups/
  ├── checksums.md5
 ```
 
-*Errrors (or) Challanges                  *solution*
--Permission errors(windows paths)     changed the path to mypath.
--Handling missing folders             Added if checks and clear error messages
+|*Errrors (or) Challanges     |             *solution*|
+|-Permission errors(windows paths) |    changed the path to mypath.|
+|-Handling missing folders          |   Added if checks and clear error messages|
 
 **Testing**
 *Test 1: Successful Backup*
@@ -81,27 +82,26 @@ C:/Users/Lenovo/backups/
 ```
 Output is like this:
 
-```
 <img width="1104" height="225" alt="image" src="https://github.com/user-attachments/assets/e37e93ca-ff82-4418-af6a-425595aa3610" />
-```
+
 *Test 2: Dry Run*
 ```
 ./backup.sh --dry-run /c/Users/Lenovo/Documents
 ```
+
 Output is like this:
-```
 
 <img width="988" height="161" alt="image" src="https://github.com/user-attachments/assets/980bcd4d-2d4b-4974-9c42-0e0d81019c59" />
-```
+
 *Test 3: Missing Folder*
 ```
 ./backup.sh /wrong/path
 ```
 Output is like this:
 
-```
+
 <img width="969" height="77" alt="image" src="https://github.com/user-attachments/assets/ac543c35-df32-4c27-aa4b-3c6e35ddc056" />
-```
+
 
 
 
