@@ -13,7 +13,7 @@ Make the script executable:
 ```
 chmod 744 backup.sh
 ```
-crreate the configuration file to match your environment:
+create the configuration file to match your environment:
 
 vim backup.config
 
