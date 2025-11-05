@@ -1,5 +1,17 @@
 **Complete Template of the project**
 
+*Project Overview*
+
+This project is a simple automated backup script witten in Bash.
+it creates timestamped backup archives (.tar.gz) from a specified folder and store them safely in a backup directory.
+
+It also:
+  - Maintains backup rotation (old backups are automatically deleted).
+  - Generates checksum files for verification.
+  - Supports dry-run mode to test the process without creating files.
+
+
+
 ```
  # Backup Automation Script (backup.sh)
 
